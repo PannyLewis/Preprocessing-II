@@ -1,3 +1,33 @@
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.btn {
+  margin: 10px 20px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  height: 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: gray;
+  color: blue;
+}
+.btn:hover {
+  opacity: 0.5;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

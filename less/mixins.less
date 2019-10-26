@@ -1,1 +1,26 @@
 // Mixins in here
+
+
+
+.custom-btn(@color, @bg-color){
+
+        margin: 10px 20px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+        width: 120px;
+        height: 25px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: @bg-color;
+        color: @color;
+
+        &:hover {
+        opacity: 0.5;
+        }
+
+}
+
+.btn {
+    .custom-btn (blue, gray)
+}
