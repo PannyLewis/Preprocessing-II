@@ -1,25 +1,49 @@
 // Navigation Styles here
 
-header {
 
 
-    nav {
-        
+    .nav-box {
+
         display: flex;
+        flex-direction: row;
         padding: 20px;
+        justify-content: space-between;
 
-            h1 {
+        @media @mobile {
+            flex-direction: column;            
+        }
+
+            .h1-box {
                 text-align: left;
-                margin: 0 200px 0 0;
+                width: 35%;
+
+                @media @mobile {
+                    width: 100%;
+                    text-align: center;
+
                 }
+            }
+            
+            
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                width: 55%;
+               
+                @media @mobile {
+                    .width-mixin();
+                }
+            }    
         
-            a {
+            nav a {
                 text-decoration: none;
-                text-align: right;
-                padding: 20px;
+                text-align: center;
                 color: black;
                 font-size: 1.6rem;
                 font-weight: bolder;
+                margin: 3px;
+                width: 75px;
 
                 }
 
@@ -28,19 +52,12 @@ header {
                 color: blue;
             }
 
-        }
-
-        img {
-            width: 100%;
-        }
-
-        .fun-bus{
-            border-top: 2px dashed gray;
-            padding: 10px;
 
         }
 
-
-
+.fun-bus {
+    border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
 
 }
+

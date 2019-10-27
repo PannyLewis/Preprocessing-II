@@ -1,6 +1,8 @@
 // Mixins in here
 
-
+.width-mixin {
+    width: 100%;
+}
 
 .custom-btn(@color, @bg-color){
 
@@ -15,12 +17,16 @@
         background-color: @bg-color;
         color: @color;
 
+        @media @mobile {
+            margin: 0px 0px;
+            width: 100%;
+        }
+
+
         &:hover {
         opacity: 0.5;
         }
 
 }
 
-.btn {
-    .custom-btn (blue, gray)
-}
+
