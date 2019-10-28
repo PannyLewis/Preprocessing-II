@@ -1,1 +1,32 @@
 // Mixins in here
+
+.width-mixin {
+    width: 100%;
+}
+
+.custom-btn(@color, @bg-color){
+
+        margin: 10px 20px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+        width: 120px;
+        height: 25px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: @bg-color;
+        color: @color;
+
+        @media @mobile {
+            margin: 0px 0px;
+            width: 100%;
+        }
+
+
+        &:hover {
+        opacity: 0.5;
+        }
+
+}
+
+
